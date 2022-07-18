@@ -29,9 +29,8 @@ html {
     margin: 0%; }
     .container #content #type-product {
       font-family: 'Montserrat', sans-serif;
-      font-size: 1vw;
-      font-weight: bold;
-      letter-spacing: 5px;
+      font-size: 0.9vw;
+      letter-spacing: 7px;
       color: #6c7289; }
     .container #content #name-product {
       font-family: 'Fraunces', serif;
@@ -40,35 +39,43 @@ html {
     .container #content #description {
       font-family: 'Montserrat', sans-serif;
       font-weight: 500;
-      font-size: 1.06vw;
+      font-size: 1.07vw;
       color: #6c7289;
-      line-height: 1.2rem; }
+      line-height: 1.8rem;
+      margin-bottom: 8%; }
     .container #content .cost {
       color: #3c8067;
       font-family: 'Fraunces', serif;
-      font-size: 1.5rem;
+      font-size: 2.7rem;
       display: inline; }
     .container #content #cost-new {
       margin-right: 30px; }
     .container #content #cost-old {
-      font-size: 0.7rem;
+      display: inline-block;
+      font-size: 1rem;
       color: grey;
       text-decoration: line-through;
-      vertical-align: text-top; }
+      vertical-align: top; }
     .container #content button {
       background-color: #3c8067;
       color: white;
       margin: 10% 2% 0% 2%;
-      padding: 0.8rem 1.8rem;
+      padding: 1.1rem 1.8rem;
       width: 95%;
       border: none;
       border-radius: 10px; }
     .container #content button > img {
-      margin-right: 10px; }
+      margin-right: 10px;
+      width: 20px; }
+    .container #content button > span {
+      font-size: 1.1rem;
+      display: inline-block;
+      vertical-align: top;
+      font-weight: bold; }
     .container #content button:hover {
       background-color: #1c232b; }
 
-@media only screen and (max-width: 376px) {
+@media (max-width: 376px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -107,9 +114,13 @@ html {
         color: #3c8067;
         font-family: 'Fraunces', serif;
         font-size: 1rem;
-        display: inline; }
+        display: inline;
+        margin-top: 0%;
+        margin-bottom: 0%; }
       .container #content #cost-new {
-        margin-right: 10px; }
+        margin-right: 10px;
+        margin-top: 10px;
+        display: inline-block; }
       .container #content #cost-old {
         font-size: 0.5rem;
         color: grey;
@@ -118,7 +129,9 @@ html {
       .container #content button {
         background-color: #3c8067;
         color: white;
-        margin: 10% 0%;
+        margin: 0%;
+        margin-top: 5%;
+        margin-bottom: 7%;
         padding: 5px 0rem;
         width: 100%;
         border: none;
